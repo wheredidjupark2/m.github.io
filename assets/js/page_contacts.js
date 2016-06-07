@@ -1,37 +1,37 @@
-var ContactPage = function () {
+var ContactPage = function() {
 
     return {
 
-    	//Basic Map
-        initMap: function () {
-			var map;
-			$(document).ready(function(){
-			  map = new GMaps({
-				div: '#map',
-				scrollwheel: false,
-				lat: 40.748866,
-				lng: -73.988366
-			  });
+        //Basic Map
+        initMap: function() {
+            var map;
+            $(document).ready(function() {
+                map = new GMaps({
+                    div: '#map',
+                    scrollwheel: false,
+                    lat: 33.8510675,
+                    lng: -117.9163481
+                });
 
-			  var marker = map.addMarker({
-				lat: 40.748866,
-				lng: -73.988366,
-	            title: 'Company, Inc.'
-		       });
-			});
+                var marker = map.addMarker({
+                    lat: 33.8510675,
+                    lng: -117.9163481,
+                    title: 'BKT United'
+                });
+            });
         },
 
         //Panorama Map
-        initPanorama: function () {
-		    var panorama;
-		    $(document).ready(function(){
-		      panorama = GMaps.createPanorama({
-		        el: '#panorama',
-		        lat : 40.748866,
-		        lng : -73.988366
-		      });
-		    });
-		}
+        initPanorama: function() {
+            var panorama;
+            $(document).ready(function() {
+                panorama = GMaps.createPanorama({
+                    el: '#panorama',
+                    lat: 33.8510675,
+                    lng: -117.9163481
+                });
+            });
+        }
 
     };
 }();
