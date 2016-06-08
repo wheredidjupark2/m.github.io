@@ -117,5 +117,19 @@
 		h3 {
 			margin-bottom: 2px;
 		}
+
+		i {
+			float:left;
+			font-size: 25px;
+			padding: 0 10px;
+
+			&.icon-drop {
+				color: #3498db;
+			}
+
+			&.fa.fa-sun-o {
+				color: #FFA500;
+			}
+		}
 	}
 }
