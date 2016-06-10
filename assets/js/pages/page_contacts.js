@@ -10,7 +10,8 @@ var ContactPage = function() {
                     div: '#map',
                     scrollwheel: false,
                     lat: 33.8510675,
-                    lng: -117.9163481
+                    lng: -117.9163481,
+                    zoom: 6
                 });
 
                 var marker = map.addMarker({

@@ -135,7 +135,7 @@
         <div class="container">
             <div class="row">
                 <!-- Blog Sidebar -->
-                <div class="col-md-3">
+                <div class="col-md-3 sidebar">
                     <div class="headline">
                         <h3>Water</h3>
                     </div>
@@ -144,12 +144,12 @@
                         <li>
                             <h3><a href="#">Biofiltration (BBF)</a></h3>
                         </li>
-                        <li>
+                        <!--                        <li>
                             <h3><a href="#">Annamox (OBA)</a></h3>
                         </li>
                         <li>
                             <h3><a href="#">Algae (BANR)</a></h3>
-                        </li>
+                        </li> -->
                         <li>
                             <h3><a href="#">Sequence Batch Reactor (BCS)</a></h3>
                         </li>
@@ -169,9 +169,10 @@
                         <li>
                             <h3><a href="#">Anaerobic Digestion (AAD)</a></h3>
                         </li>
-                        <li>
+                        <!--              <li>
                             <h3><a href="#">COWT - BGP - AMX (CBA)</a></h3>
-                        </li>
+                        </li> -->
+                        <!--  -->
                         <li>
                             <h3><a href="#">Turbo Blower (BKTurbo)</a></h3>
                         </li>
@@ -189,90 +190,131 @@
                         <img class="img-responsive full-width" src="assets/img/today-water-overview.png" alt="Today Water Cross-Section Overview">
                     </div>
                     <div>
-                        <table class="table table-bordered today-water-table">
-                            <col width="25%">
+                        <div class="headline">
+                            <h3>Today Water Technologies</h3></div>
+                        <table class="table table-bordered today-water-table margin-bottom-60">
+                            <col width="15%">
                             <col width="5%">
-                            <col width="35%">
-                            <col width="35%">
+                            <col width="40%">
+                            <col width="40%">
                             <thead>
                                 <tr>
                                     <th></th>
                                     <th></th>
-                                    <th><div><i class="icon-drop"></i><h3>Water</h3></div></th>
-                                    <th><h3><i class="fa fa-sun-o"></i>Energy</h3></th>
+                                    <th>
+                                        <div><i class="icon-drop"></i>
+                                            <h3>Water</h3></div>
+                                    </th>
+                                    <th>
+                                        <h3><i class="fa fa-sun-o"></i>Energy</h3></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td rowspan="3"><h5>Municipal Wastewater</h5></td>
-                                    <td class="text-center">1</td>
-                                    <td>
-                                      <!--   <ul class="list-group list-unstyled">
-                                            <li class="list-group-item"><a href="">Primary Treatment Carbon Diversion</a></li>
-                                            <li class="list-group-item"><a href="">Wet Weather Flow</a></li>
-                                        </ul> -->
-                                        <a href="">Primary Treatment Carbon Diversion</a>
-                                        <br>
-                                        <a href="">Wet Weather Flow</a>
+                                    <td rowspan="3" class="text-center">
+                                        <h5>Municipal Wastewater</h5>
+                                        <div><i class="fa fa-building-o"></i>
+                                        </div>
+                                        </td>
+                                    <td class="text-center">
+                                  <!--   <span class="fa-stack fa-sm text-primary">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-stack-1x fa-inverse">1</i>
+                                    </span> -->
+                                    Phase <br> I
                                     </td>
                                     <td>
-                                        <a href="">Thermal Hydrolysis</a>
-                                        <br>
-                                        <a href="">Anaebolic Digestion</a>
+                                        <ul class="list-group list-unstyled">
+                                            <li><a class="list-group-item" href="">Primary Treatment Carbon Diversion</a></li>
+                                            <li><a class="list-group-item" href="">Wet Weather Flow</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-group list-unstyled">
+                                            <li><a class="list-group-item" href="">Thermal Hydrolysis</a></li>
+                                            <li><a class="list-group-item" href="">Anaebolic Digestion</a></li>
+                                        </ul>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">2</td>
-                                    <td><a href="">Main Treatment</a></td>
+                                    <td class="text-center">
+                                        Phase <br> II
+                                    </td>
+                                    <td>
+                                        <ul class="list-group list-unstyled">
+                                            <li><a class="list-group-item" href="">Main Treatment</a></li>
+                                        </ul>
+                                    </td>
                                     <td rowspan="2">
-                                        <a href="">Turbo Blower</a>
-                                        <br>
-                                        <a href="">Energy Optimization System</a>
+                                        <ul class="list-group list-unstyled">
+                                            <li><a class="list-group-item" href="">Turbo Blower</a></li>
+                                            <li><a class="list-group-item" href="">Energy Optimization System</a></li>
+                                        </ul>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">3</td>
-                                    <td><a href="">Tertiary Treatment for Water Reuse WWTP Retrofitting</a></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2"><h5>Ground Treatment</h5></td>
-                                    <td>
-                                        <a href="">
-                                    Nitrogen Removal    
-                                    </a>
-                                        <br>
-                                        <a href="">
-                                        Perchlorate Removal
-                                    </a>
-                                        <br>
-                                        <a href="">Selenium Removal</a>
+                                    <td class="text-center">
+                                        Phase <br> III
                                     </td>
                                     <td>
+                                        <ul class="list-group list-unstyled">
+                                            <li><a class="list-group-item" href="">Tertiary Treatment for Water Reuse WWTP Retrofitting</a></li>
+                                        </ul>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"><h5>Industrial Wastewater</h5></td>
-                                    <td><a href="">Agricultural Wastewater</a>
-                                        <br>
-                                        <a href="">Biogas Plant Effluent</a>
+                                    <td colspan="2" class="text-center">
+                                        <h5>Ground Treatment</h5>
+                                        <div><i class="fa fa-tint"></i></div>
+                                        </td>
+                                    <td>
+                                        <ul class="list-group list-unstyled">
+                                            <li><a class="list-group-item" href="">Nitrogen Removal</a></li>
+                                            <li><a class="list-group-item" href="">Perchlorate Removal</a></li>
+                                            <li><a class="list-group-item" href="">Selenium Removal</a></li>
+                                        </ul>
                                     </td>
                                     <td>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"><h5>Livestock Wastewater</h5></td>
-                                    <td><a href="">Algal Bloom Control</a>
-                                        <br>
-                                        <a href="">Customizable Solution</a></td>
-                                    <td><a href="">Anaeroblic Digestion</a></td>
+                                    <td colspan="2" class="text-center">
+                                        <h5>Industrial Wastewater</h5>
+                                         <div><i class="fa fa-industry"></i></div>
+                                    </td>
+                                    <td>
+                                        <ul class="list-group list-unstyled">
+                                            <li><a class="list-group-item" href="">Agricultural Wastewater</a></li>
+                                            <li><a class="list-group-item" href="">Biogas Plant Effluent</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="text-center">
+                                        <h5>Livestock Wastewater</h5>
+                                        <div><i class="fa fa-paw"></i></div>
+                                    </td>
+                                    <td>
+                                        <ul class="list-group list-unstyled">
+                                            <li><a class="list-group-item" href="">Algal Bloom Control</a></li>
+                                            <li><a class="list-group-item" href="">Customizable Solution</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-group list-unstyled">
+                                            <li><a href="" class="list-group-item">Anaebolic Digestion</a></li>
+                                        </ul>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <!-- End Blog Posts -->
                     <!-- End Blog All Posts -->
-                     <!-- Service Blocks -->
-<!--             <div class="row margin-bottom-30">
+                    <!-- Service Blocks -->
+                    <!--             <div class="row margin-bottom-30">
                 <div class="col-sm-12 col-md-6">
                     <div class="service">
                         <i class="icon-drop service-icon"></i>
@@ -327,8 +369,7 @@
                     </div>
                 </div>
             </div> -->
-            <!-- End Service Blokcs -->
-           
+                    <!-- End Service Blokcs -->
                 </div>
             </div>
         </div>
