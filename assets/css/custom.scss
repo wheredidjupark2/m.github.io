@@ -133,18 +133,17 @@
             }
         }
         .list-group-item {
-        	border: none;
-        	padding: 10px 0;
+            border: none;
+            padding: 10px 0;
         }
         ul {
-        	margin: 0 5px;
+            margin: 0 5px;
         }
-
         tbody {
-        	i {
-        		margin-top: 10px;
-        		font-size: 35px;
-        	}
+            i {
+                margin-top: 10px;
+                font-size: 35px;
+            }
         }
     }
     
@@ -152,4 +151,18 @@
         .headline {
             margin-bottom: 10px;
         }
+    }
+    
+    .qa {
+        h2 {
+            border-left: 3px solid #3498db;
+            padding-left: 20px;
+        }
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .tech-header {
+        font-weight: bold;
+        font-family: sans-serif;
     }

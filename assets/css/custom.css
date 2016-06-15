@@ -101,4 +101,15 @@
 .sidebar .headline {
   margin-bottom: 10px; }
 
+.qa {
+  width: 100%;
+  margin: 15px 0; }
+  .qa h2 {
+    border-left: 3px solid #3498db;
+    padding-left: 20px; }
+
+.tech-header {
+  font-weight: bold;
+  font-family: sans-serif; }
+
 /*# sourceMappingURL=custom.css.map */
