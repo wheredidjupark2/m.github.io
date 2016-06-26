@@ -112,4 +112,10 @@
   font-weight: bold;
   font-family: sans-serif; }
 
+.button.general.enabled {
+  display: none; }
+
+.button.general.full.enabled.hover-effect {
+  display: none; }
+
 /*# sourceMappingURL=custom.css.map */
