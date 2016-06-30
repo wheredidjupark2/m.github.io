@@ -1,176 +1,192 @@
-    .sidebar-left {
-        h3 {
-            font-size: 13px;
-            margin: 0 0 5px;
-            line-height: 20px;
-        }
+//Navigation
+.header-v3 .navbar-default ul.nav.navbar-nav>li>a {
+    font-family: 'Calibri';
+    font-size: 16px;
+    font-weight: 200;
+}
+
+//Sidebar
+.sidebar-left {
+    h3 {
+        font-size: 13px;
+        margin: 0 0 5px;
+        line-height: 20px;
     }
-    
-    .breadcrumbs {
-        overflow: hidden;
-        padding: 10px 0 6px;
-        border-bottom: solid 1px #eee;
-        background: none;
-        h1 {}
-    }
-    
-    .table.table-tomorrow-water {
-        td {
-            height: 80px;
-            padding: 0;
-            border: 2px solid #FFF;
-            position: relative;
-            div {
-                height: 100%;
-                &.inner-orange-border {
-                    border: 3px solid #FFA500;
-                }
-                &.inner-blue-border {
-                    border: 3px solid rgb(47, 191, 255);
-                }
-            }
-            .inner-blue-border,
-            .inner-orange-border {
-                li {
-                    margin: 5% 0;
-                }
-            }
-            ul {
-                margin-top: 10px;
-                li {
-                    font-size: 14px;
-                    height: 100%;
-                    overflow: auto;
-                }
-            }
-        }
-        .row-tomorrow-water {
-            .col-1 {
-                background: #deeff5;
-            }
-            .col-2 {
-                background: rgb(147, 205, 221);
-            }
-        }
-        .row-livestock-wastewater {}
-    }
-    
-    .block-center {
-        margin: 0 auto;
-    }
-    
-    .bg-grey1 {
-        background: #F8F8F8;
-    }
-    
-    .bg-grey2 {
-        background: #DBDBDB;
-    }
-    
-    .bg-grey3 {
-        background: #AAA;
-        color: white;
-    }
-    
-    .bg-grey4 {
-        background: #7d7d7d;
-        color: white;
-    }
-    
-    .bg-black {
-        background: #111;
-        color: white;
-    }
-    
-    .bg-blue {
-        background: rgb(47, 191, 255);
-        color: white;
-        margin: 4px 0px;
-        padding: 15px 0px;
-    }
-    
-    .team-bkt {
-        li:hover > .team-img:after {
-            background: rgba(0, 0, 0, 0.5);
-            ;
-        }
-        li > .team-img:after {
-            // transition: none;
-            top: 0;
-            left: 0;
-            width: 100%;
+}
+
+.breadcrumbs {
+    overflow: hidden;
+    padding: 10px 0 6px;
+    border-bottom: solid 1px #eee;
+    background: none;
+}
+
+.table.table-tomorrow-water {
+    td {
+        height: 80px;
+        padding: 0;
+        border: 2px solid #FFF;
+        position: relative;
+        div {
             height: 100%;
-            content: " ";
-            position: absolute;
-            background: transparent;
-            transition: all 0.4s ease-in-out;
-        }
-    }
-    
-    .table.today-water-table {
-        -webkit-box-shadow: 0px 20px 57px -1px rgba(0, 0, 0, 0.43);
-        -moz-box-shadow: 0px 20px 57px -1px rgba(0, 0, 0, 0.43);
-        box-shadow: 0px 20px 57px -1px rgba(0, 0, 0, 0.43);
-        thead > tr > th {
-            border-bottom: 2px solid #3498db;
-            // &.th-water {
-            // }
-            // &.th-energy{
-            // }
-            h3 {
-                margin-bottom: 2px;
+            &.inner-orange-border {
+                border: 3px solid #FFA500;
             }
-            i {
-                float: left;
-                font-size: 25px;
-                padding: 0 10px;
-                &.icon-drop {
-                    color: #3498db;
-                }
-                &.fa.fa-sun-o {
-                    color: #FFA500;
-                }
+            &.inner-blue-border {
+                border: 3px solid rgb(47, 191, 255);
             }
         }
-        .list-group-item {
-            border: none;
-            padding: 10px 0;
+        .inner-blue-border,
+        .inner-orange-border {
+            li {
+                margin: 5% 0;
+            }
         }
         ul {
-            margin: 0 5px;
-        }
-        tbody {
-            i {
-                margin-top: 10px;
-                font-size: 35px;
+            margin-top: 10px;
+            li {
+                font-size: 14px;
+                height: 100%;
+                overflow: auto;
             }
         }
     }
-    
-    .sidebar {
-        .headline {
-            margin-bottom: 10px;
+    .row-tomorrow-water {
+        .col-1 {
+            background: #deeff5;
+        }
+        .col-2 {
+            background: rgb(147, 205, 221);
         }
     }
-    
-    .qa {
-        h2 {
-            border-left: 3px solid #3498db;
-            padding-left: 20px;
-        }
+    .row-livestock-wastewater {}
+}
+
+.block-center {
+    margin: 0 auto;
+}
+
+
+//Table Background Colors
+.bg-grey1 {
+    background: #F8F8F8;
+}
+
+.bg-grey2 {
+    background: #DBDBDB;
+}
+
+.bg-grey3 {
+    background: #AAA;
+    color: white;
+}
+
+.bg-grey4 {
+    background: #7d7d7d;
+    color: white;
+}
+
+.bg-black {
+    background: #111;
+    color: white;
+}
+
+.bg-blue {
+    background: rgb(47, 191, 255);
+    color: white;
+    margin: 4px 0px;
+    padding: 15px 0px;
+}
+//End table background colors
+
+.team-bkt {
+    li:hover > .team-img:after {
+        background: rgba(0, 0, 0, 0.5);
+        ;
+    }
+    li > .team-img:after {
+        // transition: none;
+        top: 0;
+        left: 0;
         width: 100%;
-        margin: 15px 0;
+        height: 100%;
+        content: " ";
+        position: absolute;
+        background: transparent;
+        transition: all 0.4s ease-in-out;
     }
+}
 
-    .tech-header {
-        font-weight: bold;
-        font-family: sans-serif;
+.table.today-water-table {
+    -webkit-box-shadow: 0px 20px 57px -1px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 20px 57px -1px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 20px 57px -1px rgba(0, 0, 0, 0.43);
+    thead > tr > th {
+        border-bottom: 2px solid #3498db;
+        // &.th-water {
+        // }
+        // &.th-energy{
+        // }
+        h3 {
+            margin-bottom: 2px;
+        }
+        i {
+            float: left;
+            font-size: 25px;
+            padding: 0 10px;
+            &.icon-drop {
+                color: #3498db;
+            }
+            &.fa.fa-sun-o {
+                color: #FFA500;
+            }
+        }
     }
+    .list-group-item {
+        border: none;
+        padding: 10px 0;
+    }
+    ul {
+        margin: 0 5px;
+    }
+    tbody {
+        i {
+            margin-top: 10px;
+            font-size: 35px;
+        }
+    }
+}
 
-    .button.general.enabled {
-        display: none;
+.sidebar {
+    .headline {
+        margin-bottom: 10px;
     }
-    
-    .button.general.full.enabled.hover-effect {
-        display: none;
+}
+
+.qa {
+    h2 {
+        border-left: 3px solid #3498db;
+        padding-left: 20px;
     }
+    width: 100%;
+    margin: 15px 0;
+}
+
+.tech-header {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.button.general.enabled {
+    display: none;
+}
+
+.button.general.full.enabled.hover-effect {
+    display: none;
+}
+
+.content-sm p, .content-md p {
+    font-family: 'Calibri';
+    font-weight: 200;
+    font-size: 17px;
+}
