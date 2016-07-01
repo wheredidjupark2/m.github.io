@@ -30,10 +30,14 @@
         div {
             height: 100%;
             &.inner-orange-border {
-                border: 3px solid #FFA500;
+                // border: 3px solid #FFA500;
+                border: 3px solid rgb(234, 182, 46);
+                // background-color: rgb(234,182,46);
             }
             &.inner-blue-border {
-                border: 3px solid rgb(47, 191, 255);
+                // border: 3px solid rgb(47, 191, 255);
+                border: 3px solid rgb(88, 141, 204);
+                // background-color:  rgb(88, 141, 204)
             }
         }
         .inner-blue-border,
@@ -53,10 +57,30 @@
     }
     .row-tomorrow-water {
         .col-1 {
-            background: #deeff5;
+            background: rgb(70, 70, 70);
+            color: white;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            p,
+            li {
+                color: white;
+            }
         }
         .col-2 {
-            background: rgb(147, 205, 221);
+            background: rgb(70, 70, 70);
+            color: white;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            p,
+            li {
+                color: white;
+            }
         }
     }
     .row-livestock-wastewater {}
@@ -66,24 +90,21 @@
     margin: 0 auto;
 }
 
-
 //Table Background Colors
 .bg-grey1 {
     background: #F8F8F8;
 }
 
 .bg-grey2 {
-    background: #DBDBDB;
+    background: #EEE;
 }
 
 .bg-grey3 {
-    background: #AAA;
-    color: white;
+    background: #CCC;
 }
 
 .bg-grey4 {
-    background: #7d7d7d;
-    color: white;
+    background: #AAA;
 }
 
 .bg-black {
@@ -92,13 +113,14 @@
 }
 
 .bg-blue {
-    background: rgb(47, 191, 255);
+    // background: rgb(47, 191, 255);
+    background-color: rgb(88, 141, 204);
     color: white;
     margin: 4px 0px;
     padding: 15px 0px;
 }
-//End table background colors
 
+//End table background colors
 .team-bkt {
     li:hover > .team-img:after {
         background: rgba(0, 0, 0, 0.5);
@@ -185,8 +207,32 @@
     display: none;
 }
 
-.content-sm p, .content-md p {
+.content-sm p,
+.content-md p {
     font-family: 'Calibri';
     font-weight: 200;
     font-size: 17px;
+}
+
+.news-v3 p {
+    font-family: 'Calibri';
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.news-v3 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Calibri';
+        font-weight: 300;
+    }
+}
+
+.left-highlight {
+    border-left: 3px solid #3498db;
+    padding-left: 20px;
 }
