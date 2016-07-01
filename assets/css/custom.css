@@ -1,5 +1,5 @@
 .header-v3 .navbar-default ul.nav.navbar-nav > li > a {
-  font-family: 'Calibri';
+  font-family: Calibri;
   font-size: 16px;
   font-weight: 200; }
 
@@ -162,5 +162,16 @@
 .left-highlight {
   border-left: 3px solid #3498db;
   padding-left: 20px; }
+
+.sitemap {
+  color: black; }
+  .sitemap li {
+    margin-top: 5px; }
+    .sitemap li a:hover {
+      color: black;
+      text-decoration: underline; }
+
+.sitemap a {
+  color: black; }
 
 /*# sourceMappingURL=custom.css.map */
