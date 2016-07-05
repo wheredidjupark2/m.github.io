@@ -1,23 +1,4 @@
-<?php
 
-// Make the page validate
-ini_set('session.use_trans_sid', '0');
-
-// Create a random string, leaving out 'o' to avoid confusion with '0'
-$char = strtoupper(substr(str_shuffle('abcdefghjkmnpqrstuvwxyz'), 0, 6));
-
-// Concatenate the random string onto the random numbers
-// The font 'Anorexia' doesn't have a character for '8', so the numbers will only go up to 7
-// '0' is left out to avoid confusion with 'O'
-$str = rand(1, 7) . rand(1, 7) . $char;
-
-// Begin the session
-session_start();
-
-// Set the session contents
-$_SESSION['captcha_id'] = $str;
-
-?>
     <!DOCTYPE html>
     <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
     <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -110,11 +91,9 @@ $_SESSION['captcha_id'] = $str;
                                 Media
                             </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Today Water</a></li>
-                                            <li><a href="#">Tomorrow Water</a></li>
-                                            <li><a href="#">Press Releases</a></li>
-                                            <li><a href="#">Case Studies</a></li>
-                                            <li><a href="#">Publications</a></li>
+                                            <li><a href="technologies.html">Technologies</a></li>
+                                            <li><a href="press.html">Press Releases</a></li>
+                                            <li><a href="partnerships.html">Partnerships</a></li>
                                         </ul>
                                     </li>
                                     <!-- End Media -->
@@ -124,10 +103,9 @@ $_SESSION['captcha_id'] = $str;
                                 ABOUT US
                             </a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Mission</a></li>
-                                            <li><a href="#">References</a></li>
-                                            <li><a href="#">Contact Us</a></li>
-                                            <li><a href="#">BKT Partners</a></li>
+                                            <li><a href="who-we-are.html">Who We Are</a></li>
+                                            <li><a href="what-we-do.html">What We Do</a></li>
+                                            <li><a href="contact-us.html">Talk To Us</a></li>
                                         </ul>
                                     </li>
                                     <!-- End About us -->
