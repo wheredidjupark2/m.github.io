@@ -1,9 +1,11 @@
 var blogPosts = [];
 
 var blogHandler = function(response) {
-
+    console.log(response);
     blogPosts = response.response.posts;
+
     blogPosts.forEach(function(post) {
+
         addBlog(post);
     });
 };
@@ -20,6 +22,16 @@ var addBlog = function(post) {
 
     var $blogBody = $('<div></div>').addClass('blog-body');
     $blogBody.html(post.body);
+    if (post.photos) {
+        post.photos.forEach(function(photo) {
+            var $img = $('<img></img>').addClass('img img-responsive').attr('src',photo.original_size.url);
+            $blogBody.prepend($img);
+        });
+
+    }
+    if (post.caption) {
+        $blogBody.append($(post.caption));
+    }
 
     $blogItem.append($blogInfo);
     $blogItem.append($blogTitle);
@@ -31,7 +43,7 @@ var addBlog = function(post) {
 
 };
 
-var filterBlog = function(){
+var filterBlog = function() {
 
     $('.blog-filter').on('click', 'h3', function(e) {
         var tag = $(this).data('name');
