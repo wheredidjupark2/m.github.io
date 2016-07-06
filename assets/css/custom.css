@@ -180,4 +180,7 @@
   height: 55px;
   width: 68px; }
 
+.blog-filter li:hover {
+  cursor: pointer; }
+
 /*# sourceMappingURL=custom.css.map */

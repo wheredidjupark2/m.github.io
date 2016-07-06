@@ -1,14 +1,16 @@
+var blogPosts = [];
+
 var blogHandler = function(response) {
-    var posts = response.response.posts;
-    console.log(posts);
-    posts.forEach(function(post) {
-    	addBlog(post);
+
+    blogPosts = response.response.posts;
+    blogPosts.forEach(function(post) {
+        addBlog(post);
     });
 };
 
 var addBlog = function(post) {
     var $blog = $('<div></div>').addClass('news-v3 bg-color-white margin-bottom-30 blog');
-    var $blogItem = $('<div></div>').addClass('news-v3-in blog-item');
+    var $blogItem = $('<div></div>').addClass(' blog-item');
 
     var $blogInfo = $('<ul></ul>').addClass("list-inline posted-info");
     $blogInfo.html('<li>Posted <span class="blog-date">' + post.date + '</span></li>');
@@ -29,6 +31,22 @@ var addBlog = function(post) {
 
 };
 
+var filterBlog = function(){
+
+    $('.blog-filter').on('click', 'h3', function(e) {
+        var tag = $(this).data('name');
+        $('.blog-container').html('');
+
+        var filteredPosts = blogPosts.filter(function(post) {
+            return post.tags.indexOf(tag) !== -1;
+        }).forEach(function(post) {
+            addBlog(post);
+        });
+    });
+};
+
+
+
 $(document).ready(function() {
 
     $.ajax({
@@ -41,4 +59,7 @@ $(document).ready(function() {
             console.log("error");
         }
     });
+
+    filterBlog();
+
 });
