@@ -183,4 +183,9 @@
 .blog-filter li:hover {
   cursor: pointer; }
 
+.tech-desc {
+  font-family: Calibri;
+  font-size: 16px;
+  font-weight: 250; }
+
 /*# sourceMappingURL=custom.css.map */
