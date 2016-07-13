@@ -202,4 +202,9 @@
 ul {
   padding-left: 10px; }
 
+.block-center > img {
+  margin: 0 auto; }
+.block-center > div {
+  margin: 0 auto; }
+
 /*# sourceMappingURL=custom.css.map */
