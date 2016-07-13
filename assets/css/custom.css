@@ -132,8 +132,8 @@
     padding-left: 20px; }
 
 .tech-header {
-  font-weight: bold;
-  font-family: sans-serif; }
+  font-weight: 200;
+  font-family: Calibri; }
 
 .button.general.enabled {
   display: none; }
@@ -186,6 +186,20 @@
 .tech-desc {
   font-family: Calibri;
   font-size: 16px;
-  font-weight: 250; }
+  font-weight: 200; }
+
+.headline-2 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px; }
+
+.subheader {
+  font-style: italic;
+  font-family: Calibri;
+  font-weight: 300;
+  font-size: 22px;
+  margin-bottom: 15px; }
+
+ul {
+  padding-left: 10px; }
 
 /*# sourceMappingURL=custom.css.map */
