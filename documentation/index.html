@@ -29,6 +29,7 @@
             <ul class="list-unstyled">
                 <li><a href="#scroll_main">Main Structure</a></li>
                 <li><a href="#scroll_nav">Headers &amp; Footers</a></li>
+                <li><a href="#scroll_filesystem">File Organization</a></li>
                 <li><a href="#scroll_css">CSS (Cascading Style Sheets)</a></li>
                 <li><a href="#scroll_js">JavaScript Initialization</a></li>
                 <li><a href="#scroll_tumblr">Blog System</a></li>
@@ -175,12 +176,58 @@ jQuery(document).ready(function() {
                 </div>
                 <div class="clearfix margin-bottom-50"></div>
                 <!-- CSS Classes -->
+                <div id="scroll_filesystem" class="margin-bottom-40">
+                    <h2>Tomorrow Water File Organization Structure<a href="#top">top <i class="fa fa-angle-up"></i></a></h2>
+                    <hr>
+                    <h3>File Structure</h3>
+                    <p>Tomorrow Water keeps multiple files in order to keep the website organized and easy to use for further development. All files are logically organized.
+                    </p>
+                    <p>All asset files (e.g. images, graphics, javascript, plugins) located in <code>/assets</code> folder</p>
+                    <h3><i class="fa fa-folder fa-2x color-blue"></i> Tomorrow Water</h3>
+                    <ul class="list-unstyled css-files">
+                        <li>----<i class="fa fa-folder"></i> <strong>assets:</strong> All non-HTML assets are saved here.
+                            <ul class="list-unstyled">
+                                <li>--------<i class="fa fa-folder"></i> <strong>css:</strong> css and sass stylesheet files are stored here</li>
+                                <li>--------<i class="fa fa-folder"></i> <strong>img:</strong> image and graphic assets</li>
+                                <li>--------<i class="fa fa-folder"></i> <strong>js</strong> javascript files</li>
+                                <li>--------<i class="fa fa-folder"></i> <strong>plug-ins:</strong> third-party plug-ins and libraries</li>
+                            </ul>
+                        </li>
+                        <li>---- &nbsp;<code>aad.html</code></li>
+                        <li>---- &nbsp;<code>algae.html</code></li>
+                        <li>---- &nbsp;<code>annamox.html</code></li>
+                        <li>---- &nbsp;<code>bcs.html</code></li>
+                        <li>---- &nbsp;<code>biofiltration.html</code></li>
+                        <li>---- &nbsp;<code>bkturbo.html</code></li>
+                        <li>---- &nbsp;<code>blog.html</code></li>
+                        <li>---- &nbsp;<code>cba.html</code></li>
+                        <li>---- &nbsp;<code>contact-us.html</code></li>
+                        <li>---- &nbsp;<code>cowt.html</code></li>
+                        <li>---- &nbsp;<code>eos.html</code></li>
+                        <li>---- &nbsp;<code>index.html</code></li>
+                        <li>---- &nbsp;<code>partnerships.html</code></li>
+                        <li>---- &nbsp;<code>press.html</code></li>
+                        <li>---- &nbsp;<code>sitemap.html</code></li>
+                        <li>---- &nbsp;<code>svdaf.html</code></li>
+                        <li>---- &nbsp;<code>team.html</code></li>
+                        <li>---- &nbsp;<code>technologies.html</code></li>
+                        <li>---- &nbsp;<code>today-in-la.html</code></li>
+                        <li>---- &nbsp;<code>today-water.html</code></li>
+                        <li>---- &nbsp;<code>tomorrow-water.html</code></li>
+                        <li>---- &nbsp;<code>un-proposal.html</code></li>
+                        <li>---- &nbsp;<code>what-we-do.html</code></li>
+                        <li>---- &nbsp;<code>who-we-are.html</code></li>
+
+                    </ul>
+                </div>
+                <div class="clearfix margin-bottom-50"></div>
+                <!-- CSS Classes -->
                 <div id="scroll_css" class="margin-bottom-40">
                     <h2>CSS (Cascading Style Sheets) <a href="#top">top <i class="fa fa-angle-up"></i></a></h2>
                     <hr>
                     <h3>CSS Files Structure</h3>
-                    <p>Tomorrow Water uses a number of CSS files in order to keep the template organized and easy to use for further development, from small projects to massive corporate projects. All <code>CSS</code> files are logically organized. Knowing <code>CSS</code> files makes customization process a lot easier and far more flexible. In addition <code>app.css</code> and <code>blocks.css</code> CSS files are used globally in all packages, It helps to use all default elements, blocks etc. in any packages.</p>
-                    <p>All CSS files located in <code>assets/css</code></p>
+                    <p>Tomorrow Water uses a number of CSS and SCSS files in order to keep the template organized and easy to use for further development. Knowing <code>CSS</code> files makes customization process a lot easier and far more flexible. The <code></code>
+
                     <h3><i class="fa fa-folder fa-2x color-blue"></i> CSS</h3>
                     <ul class="list-unstyled css-files">
                         <li>----<i class="fa fa-folder"></i> <strong>pages:</strong> From here you may control all of the independent CSS pages.</li>
@@ -191,6 +238,8 @@ jQuery(document).ready(function() {
                         <li>---- &nbsp;<code>app.css</code></li>
                         <li>---- &nbsp;<code>style.css</code></li>
                         <li>---- &nbsp;<code>blocks.css</code></li>
+                        <li>---- &nbsp;<code>custom.scss</code></li>
+                        <li>---- &nbsp;<code>custom.css</code></li>
                     </ul>
                 </div>
                 <!-- JavaScript initialization -->
