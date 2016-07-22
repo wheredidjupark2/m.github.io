@@ -215,7 +215,7 @@
 }
 
 .news-v3 p {
-    font-family: Calibri,"Open Sans";
+    font-family: Calibri, "Open Sans";
     font-weight: 200;
     font-size: 18px;
 }
@@ -227,7 +227,7 @@
     h4,
     h5,
     h6 {
-        font-family: Calibri,"Open Sans";
+        font-family: Calibri, "Open Sans";
         font-weight: 300;
     }
 }
@@ -266,7 +266,7 @@
 }
 
 .tech-desc {
-    font-family: Calibri,"Open Sans";
+    font-family: Calibri, "Open Sans";
     font-size: 16px;
     font-weight: 200;
 }
@@ -274,11 +274,17 @@
 .headline-2 {
     border-bottom: 1px solid #ccc;
     margin-bottom: 30px;
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin-bottom: 0;
+    }
 }
 
 .subheader {
     font-style: italic;
-    font-family: Calibri,"Open Sans";
+    font-family: Calibri, "Open Sans";
     font-weight: 300;
     font-size: 22px;
     margin-bottom: 15px;
